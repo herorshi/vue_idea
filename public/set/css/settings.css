@@ -12,25 +12,25 @@ website:   	http://www.themepunch.com
 -----------------------------------------------------------------------------*/
 
 @font-face {
-    /* font-family: 'revicons';
+    font-family: 'revicons';
     src: url('../fonts/revicons.eot?5510888');
     src: url('../fonts/revicons.eot?5510888#iefix') format('embedded-opentype'), url('../fonts/revicons.woff?5510888') format('woff'), url('../fonts/revicons.ttf?5510888') format('truetype'), url('../fonts/revicons.svg?5510888#revicons') format('svg');
     font-weight: normal;
-    font-style: normal; */
+    font-style: normal;
 }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 
-/*
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'revicons';
     src: url('../font/revicons.svg?5510888#revicons') format('svg');
   }
 }
-*/
+
 
 [class^="revicon-"]:before,
 [class*=" revicon-"]:before {
@@ -734,19 +734,19 @@ img.tp-slider-alternative-image {
 }
 
 .tp-dottedoverlay.twoxtwo {
-    /* background: url(../assets/gridtile.png) */
+    background: url(../assets/gridtile.png)
 }
 
 .tp-dottedoverlay.twoxtwowhite {
-    /* background: url(../assets/gridtile_white.png) */
+    background: url(../assets/gridtile_white.png)
 }
 
 .tp-dottedoverlay.threexthree {
-    /* background: url(../assets/gridtile_3x3.png) */
+    background: url(../assets/gridtile_3x3.png)
 }
 
 .tp-dottedoverlay.threexthreewhite {
-    /* background: url(../assets/gridtile_3x3_white.png) */
+    background: url(../assets/gridtile_3x3_white.png)
 }
 
 /********************************
@@ -814,7 +814,7 @@ img.tp-slider-alternative-image {
 }
 
 .tp-bannershadow.tp-shadow1 {
-    /* background: url(../assets/shadow1.png) no-repeat; */
+    background: url(../assets/shadow1.png) no-repeat;
     background-size: 100% 100%;
     width: 890px;
     height: 30px;
@@ -822,7 +822,7 @@ img.tp-slider-alternative-image {
 }
 
 .tp-bannershadow.tp-shadow2 {
-    /* background: url(../assets/shadow2.png) no-repeat; */
+    background: url(../assets/shadow2.png) no-repeat;
     background-size: 100% 100%;
     width: 890px;
     height: 60px;
@@ -830,7 +830,7 @@ img.tp-slider-alternative-image {
 }
 
 .tp-bannershadow.tp-shadow3 {
-    /* background: url(../assets/shadow3.png) no-repeat; */
+    background: url(../assets/shadow3.png) no-repeat;
     background-size: 100% 100%;
     width: 890px;
     height: 60px;
@@ -852,7 +852,7 @@ img.tp-slider-alternative-image {
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) !important;
     font-size: 15px;
     line-height: 45px !important;
-    /* background: url(../images/gradient/g30.png) repeat-x top; */
+    background: url(../images/gradient/g30.png) repeat-x top;
     font-family: arial, sans-serif;
     font-weight: bold;
     letter-spacing: -1px;
@@ -866,7 +866,7 @@ img.tp-slider-alternative-image {
     padding: 9px 20px;
     font-size: 19px;
     line-height: 57px !important;
-    /* background: url(../images/gradient/g40.png) repeat-x top */
+    background: url(../images/gradient/g40.png) repeat-x top
 }
 
 .purchase:hover,
@@ -983,7 +983,7 @@ img.tp-slider-alternative-image {
 .tp-bullets.simplebullets.navbar {
     border: 1px solid #666;
     border-bottom: 1px solid #444;
-    /* background: url(../assets/boxed_bgtile.png); */
+    background: url(../assets/boxed_bgtile.png);
     height: 40px;
     padding: 0px 10px;
     -webkit-border-radius: 5px;
@@ -992,7 +992,7 @@ img.tp-slider-alternative-image {
 }
 
 .tp-bullets.simplebullets.navbar-old {
-    /* background: url(../assets/navigdots_bgtile.png); */
+    background: url(../assets/navigdots_bgtile.png);
     height: 35px;
     padding: 0px 10px;
     -webkit-border-radius: 5px;
@@ -1045,7 +1045,7 @@ img.tp-slider-alternative-image {
 .tp-bullets.simplebullets.square .bullet {
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/bullets2.png) no-repeat bottom left; */
+    background: url(../assets/bullets2.png) no-repeat bottom left;
     width: 19px;
     height: 19px;
     margin-right: 0px;
@@ -1062,7 +1062,7 @@ img.tp-slider-alternative-image {
 .tp-bullets.simplebullets.square-old .bullet {
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/bullets2.png) no-repeat bottom left; */
+    background: url(../assets/bullets2.png) no-repeat bottom left;
     width: 19px;
     height: 19px;
     margin-right: 0px;
@@ -1079,7 +1079,7 @@ img.tp-slider-alternative-image {
 .tp-bullets.simplebullets.navbar .bullet {
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/bullet_boxed.png) no-repeat top left; */
+    background: url(../assets/bullet_boxed.png) no-repeat top left;
     width: 18px;
     height: 19px;
     margin-right: 5px;
@@ -1100,7 +1100,7 @@ img.tp-slider-alternative-image {
 .tp-bullets.simplebullets.navbar-old .bullet {
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/navigdots.png) no-repeat bottom left; */
+    background: url(../assets/navigdots.png) no-repeat bottom left;
     width: 15px;
     height: 15px;
     margin-left: 5px !important;
@@ -1210,7 +1210,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrow_left.png) no-repeat top left; */
+    background: url(../assets/arrow_left.png) no-repeat top left;
     width: 26px;
     height: 26px;
     margin-right: 0px;
@@ -1222,7 +1222,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrow_right.png) no-repeat top left; */
+    background: url(../assets/arrow_right.png) no-repeat top left;
     width: 26px;
     height: 26px;
     margin-right: 0px;
@@ -1234,7 +1234,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/small_left_boxed.png) no-repeat top left; */
+    background: url(../assets/small_left_boxed.png) no-repeat top left;
     width: 20px;
     height: 15px;
     float: left;
@@ -1246,7 +1246,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/small_right_boxed.png) no-repeat top left; */
+    background: url(../assets/small_right_boxed.png) no-repeat top left;
     width: 20px;
     height: 15px;
     float: left;
@@ -1258,7 +1258,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrowleft.png) no-repeat top left; */
+    background: url(../assets/arrowleft.png) no-repeat top left;
     width: 9px;
     height: 16px;
     float: left;
@@ -1270,7 +1270,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrowright.png) no-repeat top left; */
+    background: url(../assets/arrowright.png) no-repeat top left;
     width: 9px;
     height: 16px;
     float: left;
@@ -1290,7 +1290,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrow_left2.png) no-repeat top left; */
+    background: url(../assets/arrow_left2.png) no-repeat top left;
     width: 12px;
     height: 17px;
     float: left;
@@ -1302,7 +1302,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrow_right2.png) no-repeat top left; */
+    background: url(../assets/arrow_right2.png) no-repeat top left;
     width: 12px;
     height: 17px;
     float: left;
@@ -1314,7 +1314,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrow_left2.png) no-repeat top left; */
+    background: url(../assets/arrow_left2.png) no-repeat top left;
     width: 12px;
     height: 17px;
     float: left;
@@ -1326,7 +1326,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* background: url(../assets/arrow_right2.png) no-repeat top left; */
+    background: url(../assets/arrow_right2.png) no-repeat top left;
     width: 12px;
     height: 17px;
     float: left;
@@ -1338,7 +1338,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* cursor: url(../images/left-arrow.png), auto; */
+    cursor: url(../images/left-arrow.png), auto;
     width: 20%;
     height: 100%;
 }
@@ -1347,7 +1347,7 @@ img.tp-slider-alternative-image {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    /* cursor: url(../images/right-arrow.png), auto; */
+    cursor: url(../images/right-arrow.png), auto;
     width: 20%;
     height: 100%;
 }
@@ -2346,11 +2346,11 @@ img.tp-slider-alternative-image {
 .tp-caption.slidelink a div {
     width: 3000px;
     height: 1500px;
-    /* background: url(../assets/coloredbg.png) repeat */
+    background: url(../assets/coloredbg.png) repeat
 }
 
 .tp-caption.slidelink a span {
-    /* background: url(../assets/coloredbg.png) repeat */
+    background: url(../assets/coloredbg.png) repeat
 }
 
 /******************************
@@ -2367,7 +2367,7 @@ img.tp-slider-alternative-image {
 .tp-loader.spinner0 {
     width: 40px;
     height: 40px;
-    /* background: url(../assets/loader.gif) no-repeat center center; */
+    background: url(../assets/loader.gif) no-repeat center center;
     background-color: #fff;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
@@ -2396,7 +2396,7 @@ img.tp-slider-alternative-image {
 }
 
 .tp-loader.spinner5 {
-    /* background: url(../assets/loader.gif) no-repeat 10px 10px; */
+    background: url(../assets/loader.gif) no-repeat 10px 10px;
     background-color: #fff;
     margin: -22px -22px;
     width: 44px;

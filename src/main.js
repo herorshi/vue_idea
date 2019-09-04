@@ -4,7 +4,7 @@ import router from "./router";
 import store from "./store";
 
 
-import $ from 'jquery'
+// import $ from 'jquery'
 
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.min.js";
@@ -34,10 +34,10 @@ import $ from 'jquery'
 
 
 
-import "@/assets/fonts/fpslineicons.woff";
-import "@/assets/fonts/jaapokkienchance-regular-webfont.woff2";
-import "@/assets/fonts/Kanit-Regular.ttf";
-import "@/assets/css/main.css";
+// import "@/assets/fonts/fpslineicons.woff";
+// import "@/assets/fonts/jaapokkienchance-regular-webfont.woff2";
+// import "@/assets/fonts/Kanit-Regular.ttf";
+// import "@/assets/css/main.css";
 
 
 

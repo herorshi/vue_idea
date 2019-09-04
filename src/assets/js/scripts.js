@@ -17,7 +17,7 @@
 
 
         // Litebox
-        $('.swipebox').swipebox();
+        // $('.swipebox').swipebox();
 
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div id='app'> 
+  <div id='app' ref="start" style="width:100%; height:100%; position:relative;"> 
         <div class="loading">
         <div class="loader">
             <h2 class="loading-text cd-headline clip is-full-width"> <span class="cd-words-wrapper"> <b class="is-visible">Hey please wait</b> <b>Still loading</b></span> </h2>
@@ -19,12 +19,32 @@
             <div class="inner">
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="transition">HOME</a></li>
-                        <li><a href="showcase.html">SHOWCASE</a></li>
+
+
+                        <linkweb></linkweb>                          
+                        <!-- <router-link  :to="{ path: '/' }"  >
+                            <li><a href="javascript:function() { return false; }">HOME</a></li>
+                        </router-link>
+                        <router-link  :to="{ path: 'showcase' }"  >
+                            <li><a href="javascript:function() { return false; }">SHOWCASE</a></li>
+                        </router-link>
+                        <router-link  :to="{ path: 'about' }"  >
+                            <li><a href="javascript:function() { return false; }">ABOUT</a></li>
+                        </router-link>
+                        <router-link  :to="{ path: 'service' }"  >
+                            <li><a href="javascript:function() { return false; }">SERVICE</a></li>
+                        </router-link>
+                        <router-link  :to="{ path: 'blog' }"  >
+                            <li><a href="javascript:function() { return false; }">BLOG</a></li>
+                        </router-link>
+                        <router-link  :to="{ path: 'contact' }"  >
+                            <li><a href="javascript:function() { return false; }">CONTACT</a></li>
+                        </router-link> -->
+                        <!-- <li><a href="showcase.html">SHOWCASE</a></li>
                         <li><a href="about.html" class="transition">ABOUT</a></li>
                         <li><a href="services.html" class="transition">SERVICES</a></li>
                         <li><a href="blog.html" class="transition">BLOGS</a></li>
-                        <li><a href="contact.html" class="transition">CONTACT</a></li>
+                        <li><a href="contact.html" class="transition">CONTACT</a></li> -->
                     </ul>
                 </nav>
                 <span class="copyright">Copyright © 2019 IDEA SPACE  | All rights reserved</span> </div>
@@ -107,6 +127,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="wow fadeInUp" data-wow-delay="0.5s">our showcase</h2>
+
                             <h5 class="wow fadeInUp" data-wow-delay="0.10s">Amazing features with creative portfolio</h5>
                             <span class="shape wow fadeInUp" data-wow-delay="0.15s">O</span> </div>
                         <!-- end col-12 -->
@@ -122,8 +143,8 @@
                         <div class="col-xs-12">
                             <ul class="portfolio-masonry">
                                 <li class="wow fadeInUp" data-wow-delay="0.05s">
-                                    <figure><img src="@/assets/images/portfolio/lohdee.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/lohdee.png" data-rel="gallery" class="swipebox" title="บริษัท ธนวัฒน์ คาสเตอร์ จำกัด">
+                                    <figure><img src="set/images/portfolio/lohdee.png" alt="Image">
+                                        <a href="set/images/portfolio2/lohdee.png" data-rel="gallery" class="swipebox" title="บริษัท ธนวัฒน์ คาสเตอร์ จำกัด">
                                             <figcaption class="bg-color4">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> บริษัท ธนวัฒน์ คาสเตอร์ จำกัด </div>
@@ -133,8 +154,8 @@
                                     </figure>
                                 </li>
                                 <li class="double wow fadeInUp" data-wow-delay="0.10s">
-                                    <figure><img src="@/assets/images/portfolio/cheevamitr.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/cheevamitr.png" data-rel="gallery" class="swipebox" title="บริษัท ชีวามิตร วิสาหกิจเพื่อสังคม จำกัด">
+                                    <figure><img src="set/images/portfolio/cheevamitr.png" alt="Image">
+                                        <a href="set/images/portfolio2/cheevamitr.png" data-rel="gallery" class="swipebox" title="บริษัท ชีวามิตร วิสาหกิจเพื่อสังคม จำกัด">
                                             <figcaption class="bg-color3">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> บริษัท ชีวามิตร วิสาหกิจเพื่อสังคม จำกัด</div>
@@ -144,8 +165,8 @@
                                     </figure>
                                 </li>
                                 <li class="double wow fadeInUp" data-wow-delay="0.15s">
-                                    <figure> <img src="@/assets/images/portfolio/hisokaori.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/hisokaori.png" data-rel="gallery" class="swipebox" title="บริษัท วีเม็ท กรุ๊ป(ประเทศไทย) จำกัด">
+                                    <figure> <img src="set/images/portfolio/hisokaori.png" alt="Image">
+                                        <a href="set/images/portfolio2/hisokaori.png" data-rel="gallery" class="swipebox" title="บริษัท วีเม็ท กรุ๊ป(ประเทศไทย) จำกัด">
                                             <figcaption class="bg-color2">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> บริษัท วีเม็ท กรุ๊ป(ประเทศไทย) จำกัด</div>
@@ -155,8 +176,8 @@
                                     </figure>
                                 </li>
                                 <li class="double wow fadeInUp" data-wow-delay="0.05s">
-                                    <figure> <img src="@/assets/images/portfolio/onlinebkd.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/onlinebkd.png" data-rel="gallery" class="swipebox" title="บริษัท บางกอก ดรัก จำกัด">
+                                    <figure> <img src="set/images/portfolio/onlinebkd.png" alt="Image">
+                                        <a href="set/images/portfolio2/onlinebkd.png" data-rel="gallery" class="swipebox" title="บริษัท บางกอก ดรัก จำกัด">
                                             <figcaption class="bg-color1">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> บริษัท บางกอก ดรัก จำกัด </div>
@@ -166,8 +187,8 @@
                                     </figure>
                                 </li>
                                 <li class="double wow fadeInUp" data-wow-delay="0.10s">
-                                    <figure> <img src="@/assets/images/portfolio/helix.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/helix.png" data-rel="gallery" class="swipebox" title="บริษัท เฮลิกซ์ จํากัด">
+                                    <figure> <img src="set/images/portfolio/helix.png" alt="Image">
+                                        <a href="set/images/portfolio2/helix.png" data-rel="gallery" class="swipebox" title="บริษัท เฮลิกซ์ จํากัด">
                                             <figcaption class="bg-color4">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> บริษัท เฮลิกซ์ จํากัด</div>
@@ -177,8 +198,8 @@
                                     </figure>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay="0.15s">
-                                    <figure> <img src="@/assets/images/portfolio/AnandaDevelopment.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/AnandaDevelopment.png" data-rel="gallery" class="swipebox" title="Ananda Recruit Web">
+                                    <figure> <img src="set/images/portfolio/AnandaDevelopment.png" alt="Image">
+                                        <a href="set/images/portfolio2/AnandaDevelopment.png" data-rel="gallery" class="swipebox" title="Ananda Recruit Web">
                                             <figcaption class="bg-color3">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> Ananda Recruit Web</div>
@@ -188,8 +209,8 @@
                                     </figure>
                                 </li>
                                 <li class="double wow fadeInUp" data-wow-delay="0.05s">
-                                    <figure> <img src="@/assets/images/portfolio/clinicya.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/clinicya.png" data-rel="gallery" class="swipebox" title="คลินิกยา">
+                                    <figure> <img src="set/images/portfolio/clinicya.png" alt="Image">
+                                        <a href="set/images/portfolio2/clinicya.png" data-rel="gallery" class="swipebox" title="คลินิกยา">
                                             <figcaption class="bg-color1">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> คลินิกยา </div>
@@ -199,8 +220,8 @@
                                     </figure>
                                 </li>
                                 <li class="double wow fadeInUp" data-wow-delay="0.10s">
-                                    <figure> <img src="@/assets/images/portfolio/tpp.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/tpp.png" data-rel="gallery" class="swipebox" title="บริษัท ที.พี.พี. แลนด์ แอนด์ เฮ้าส์ จำกัด">
+                                    <figure> <img src="set/images/portfolio/tpp.png" alt="Image">
+                                        <a href="set/images/portfolio2/tpp.png" data-rel="gallery" class="swipebox" title="บริษัท ที.พี.พี. แลนด์ แอนด์ เฮ้าส์ จำกัด">
                                             <figcaption class="bg-color4">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span>บริษัท ที.พี.พี. แลนด์ แอนด์ เฮ้าส์ จำกัด </div>
@@ -210,8 +231,8 @@
                                     </figure>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay="0.15s">
-                                    <figure> <img src="@/assets/images/portfolio/skland.png" alt="Image">
-                                        <a href="@/assets/images/portfolio2/skland.png" data-rel="gallery" class="swipebox" title="SK LAND">
+                                    <figure> <img src="set/images/portfolio/skland.png" alt="Image">
+                                        <a href="set/images/portfolio2/skland.png" data-rel="gallery" class="swipebox" title="SK LAND">
                                             <figcaption class="bg-color2">
                                                 <div class="table">
                                                     <div class="inner"> <span>O</span> SK LAND </div>
@@ -383,6 +404,7 @@
 
 
 <script>
+import linkweb from '@/components/mainweb/linkweb.vue'
 // import $ from 'jquery'
 // import "@/assets/js/jquery.min.js";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -413,17 +435,249 @@
     computed:  { },
     watch:     { },
     props:     [''],
-    components:{ },
+    components:{ 
+        linkweb
+    },
     mounted()  { 
-      (function($) {
-       $(window).load(function() {
-           $(".loading .loading-image").addClass("dissappear");
-           $(".loading .loading-text").addClass("dissappear");
-           $(".slider").addClass("goes-up");
-           $(".navbar-default").addClass("show");
-           $('.loading').delay(1000).addClass("fade-out");
-       });
-   })(jQuery)
+   var vm = this;
+   let $ = jQuery;
+    $(document).ready(function() {
+        $(".loading .loading-image").addClass("dissappear");
+        $(".loading .loading-text").addClass("dissappear");
+        $(".slider").addClass("goes-up");
+        $(".navbar-default").addClass("show");
+        $('.loading').delay(1000).addClass("fade-out");
+        $('#rev_slider_35_1').show().revolution({
+            dottedOverlay: "none",
+            delay: 5000,
+            startwidth: 960,
+            startheight: 350,
+            hideThumbs: 200,
+
+            thumbWidth: 100,
+            thumbHeight: 50,
+            thumbAmount: 3,
+
+
+            simplifyAll: "off",
+
+            navigationType: "bullet",
+            navigationArrows: "solo",
+            navigationStyle: "round",
+
+            touchenabled: "on",
+            onHoverStop: "off",
+            nextSlideOnWindowFocus: "off",
+
+            swipe_threshold: 75,
+            swipe_min_touches: 1,
+            drag_block_vertical: false,
+
+
+
+            keyboardNavigation: "off",
+
+            navigationHAlign: "center",
+            navigationVAlign: "bottom",
+            navigationHOffset: 0,
+            navigationVOffset: 20,
+
+            soloArrowLeftHalign: "left",
+            soloArrowLeftValign: "center",
+            soloArrowLeftHOffset: 0,
+            soloArrowLeftVOffset: 0,
+
+            soloArrowRightHalign: "right",
+            soloArrowRightValign: "center",
+            soloArrowRightHOffset: 0,
+            soloArrowRightVOffset: 0,
+
+            shadow: 0,
+            fullWidth: "off",
+            fullScreen: "on",
+
+            spinner: "spinner2",
+
+            stopLoop: "off",
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
+
+            shuffle: "off",
+
+
+            forceFullWidth: "off",
+            fullScreenAlignForce: "off",
+            minFullScreenHeight: "400",
+            hideTimerBar: "on",
+            hideThumbsOnMobile: "off",
+            hideNavDelayOnMobile: 1500,
+            hideBulletsOnMobile: "off",
+            hideArrowsOnMobile: "on",
+            hideThumbsUnderResolution: 0,
+
+            fullScreenOffsetContainer: ".wrapper",
+            fullScreenOffset: "",
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            startWithSlide: 0
+        });
+        var setREVStartSize = function() {
+    var tpopt = new Object();
+    tpopt.startwidth = 960;
+    tpopt.startheight = 350;
+    tpopt.container = jQuery('#rev_slider_35_1');
+    tpopt.fullScreen = "on";
+    tpopt.forceFullWidth = "off";
+
+
+    tpopt.container.closest(".rev_slider_wrapper").css({
+        height: tpopt.container.height()
+    });
+    tpopt.width = parseInt(tpopt.container.width(), 0);
+    tpopt.height = parseInt(tpopt.container.height(), 0);
+    tpopt.bw = tpopt.width / tpopt.startwidth;
+    tpopt.bh = tpopt.height / tpopt.startheight;
+    if (tpopt.bh > tpopt.bw) tpopt.bh = tpopt.bw;
+    if (tpopt.bh < tpopt.bw) tpopt.bw = tpopt.bh;
+    if (tpopt.bw < tpopt.bh) tpopt.bh = tpopt.bw;
+    if (tpopt.bh > 1) {
+        tpopt.bw = 1;
+        tpopt.bh = 1
+    }
+    if (tpopt.bw > 1) {
+        tpopt.bw = 1;
+        tpopt.bh = 1
+    }
+    tpopt.height = Math.round(tpopt.startheight * (tpopt.width / tpopt.startwidth));
+    if (tpopt.height > tpopt.startheight && tpopt.autoHeight != "on") tpopt.height = tpopt.startheight;
+    if (tpopt.fullScreen == "on") {
+        tpopt.height = tpopt.bw * tpopt.startheight;
+        var cow = tpopt.container.parent().width();
+        var coh = jQuery(window).height();
+        if (tpopt.fullScreenOffsetContainer != undefined) {
+            try {
+                var offcontainers = tpopt.fullScreenOffsetContainer.split(",");
+                jQuery.each(offcontainers, function(e, t) {
+                    coh = coh - jQuery(t).outerHeight(true);
+                    if (coh < tpopt.minFullScreenHeight) coh = tpopt.minFullScreenHeight
+                })
+            } catch (e) {}
+        }
+        tpopt.container.parent().height(coh);
+        tpopt.container.height(coh);
+        tpopt.container.closest(".rev_slider_wrapper").height(coh);
+        tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);
+        tpopt.container.css({
+            height: "100%"
+        });
+        tpopt.height = coh;
+    } else {
+        tpopt.container.height(tpopt.height);
+        tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);
+        tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);
+    }
+};
+
+/* CALL PLACEHOLDER */
+setREVStartSize();
+    })
+    this.$nextTick(() => {
+
+
+
+        
+    //    window.$ - jQuery;
+      $(document).ready(function() {
+        "use strict";
+        // Scroll down opacity
+        var divs = $(".slider-inner");
+        $(window).on("scroll", function() {
+          var st = $(this).scrollTop();
+          divs.css({
+            opacity: 1 - st / 700
+          });
+        });
+
+        // Litebox
+        $(".swipebox").swipebox();
+
+        // Parallax effect
+        $.stellar({
+          horizontalScrolling: false,
+          verticalOffset: 0,
+          responsive: true
+        });
+
+        // Counter
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1000
+        });
+
+        // Hamburger Menu
+        $(".hamburger-menu").on("click", function(e) {
+          $(".hamburger-menu").toggleClass("menu-open");
+          $(".navigation").toggleClass("show-me");
+          $(".navigation ul li").toggleClass("show-me");
+        });
+
+        // Page transition
+        $(".transition").on("click", function(e) {
+          $(".transition-overlay").toggleClass("show-me");
+        });
+
+        // Transition delay
+        $(".transition").on("click", function(e) {
+          e.preventDefault();
+          var goTo = this.getAttribute("href");
+          setTimeout(function() {
+            window.location = goTo;
+          }, 1000);
+        });
+
+        // Hide Fixed Slider
+        $(window).on("scroll touchmove", function() {
+          $(".slider .slider-inner").toggleClass(
+            "hide",
+            $(document).scrollTop() > 1500
+          );
+        });
+//////setting////
+      });
+
+
+      wow = new WOW({
+        animateClass: "animated",
+        offset: 50
+      });
+      wow.init();
+
+
+      $(window).load(function() {
+        var $container = $(".portfolio-masonry");
+        $container.masonry({
+          columnWidth: 0,
+          itemSelector: ".portfolio-masonry li"
+        });
+      });
+
+///////setting////
+
+
+
+
+
+// var $ = jQuery;
+// $.noConflict();
+
+
+// $(document).ready(function() {
+// });
+
+
+//////setting////
+    });
 
     },
     mixins:    [ ],
