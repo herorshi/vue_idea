@@ -281,10 +281,10 @@
              </router-link>
                     </div>
                     <!-- end col-4 -->
-                    <div class="col-md-4 col-sm-4 services-plans">
+        <div class="col-md-4 col-sm-4 services-plans">
           <router-link  :to="{ path: '/google' }"  >
             <a href="javascript:function() { return false; }" target="_blank">
-            <img src="set/images/google-adwords.png">
+            <img src="set/images/googleadwords.png">
             <div class="services-overlay"></div>
             <div class="text">ดูรายละเอียด</div>
             <h3>Google Adwords</h3>
@@ -294,7 +294,7 @@
                     <!-- end col-4 -->
 
           <div class="col-md-4 col-sm-4 services-plans">
-          <router-link  :to="{ path: '/google' }"  > 
+          <router-link  :to="{ path: '/facebook' }"  > 
             <a href="javascript:function() { return false; }" target="_blank">
             <img src="set/images/facebook-ads.png">
             <div class="services-overlay"></div>
