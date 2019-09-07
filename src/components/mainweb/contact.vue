@@ -38,7 +38,12 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12"> <a href="index.html"><img src="set/images/ids-logo.png" alt="Image" class="logo"></a>
+                <div class="col-xs-12"> 
+                    <router-link  :to="{ path: '/' }"  >
+                        <a href="javascript:function() { return false; }">
+                        <img src="set/images/ids-logo.png" alt="Image" class="logo" />
+                        </a>
+                    </router-link>        
                     <div class="hamburger-menu"> <span></span> <span></span> <span></span> <span></span> </div>
                 </div>
                 <!-- end col-12 -->

@@ -37,7 +37,12 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12"> <a href="index.html"><img src="set/images/ids-logo.png" alt="Image" class="logo"></a>
+                <div class="col-xs-12"> 
+                    <router-link  :to="{ path: '/' }"  >
+                        <a href="javascript:function() { return false; }">
+                        <img src="set/images/ids-logo.png" alt="Image" class="logo" />
+                        </a>
+                    </router-link>
                     <div class="hamburger-menu"> <span></span> <span></span> <span></span> <span></span> </div>
                 </div>
                 <!-- end col-12 -->
@@ -218,68 +223,85 @@
                         <!-- end title-box -->
                     </div>
                     <!-- end col-12 -->
+           
                     <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="website-app.html" target="_blank">
+         <router-link  :to="{ path: '/webapp' }"  >
+         <a href="javascript:function() { return false; }" target="_blank">
           <img src="set/images/website-app.jpg">
           <div class="services-overlay"></div>
           <div class="textweb">ดูรายละเอียด</div>
           <h3>Website & App</h3>
           </a>
+         </router-link>
+         
                     </div>
                     <!-- end col-4 -->
-                    <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="banner-logo.html" target="_blank">
-          <img src="set/images/baner-logo.jpg">
-          <div class="services-overlay"></div>
-          <div class="text">ดูรายละเอียด</div>
-          <h3>Banner & Logo</h3>
-          </a>
+        <div class="col-md-4 col-sm-4 services-plans">
+          <router-link  :to="{ path: '/banner' }"  >  
+            <a href="javascript:function() { return false; }" target="_blank">
+            <img src="set/images/baner-logo.jpg">
+            <div class="services-overlay"></div>
+            <div class="text">ดูรายละเอียด</div>
+            <h3>Banner & Logo</h3>
+            </a>
+          </router-link>
                     </div>
                     <!-- end col-4 -->
-                    <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="domain.html" target="_blank">
-          <img src="set/images/domain.jpg">
-          <div class="services-overlay"></div>
-          <div class="text">ดูรายละเอียด</div>
-          <h3>Domain</h3>
-          </a>
+                    
+         <div class="col-md-4 col-sm-4 services-plans">
+          <router-link  :to="{ path: '/domain' }"  >  
+            <a href="javascript:function() { return false; }" target="_blank">
+            <img src="set/images/domain.jpg">
+            <div class="services-overlay"></div>
+            <div class="text">ดูรายละเอียด</div>
+            <h3>Domain</h3>
+            </a>
+          </router-link>
                     </div>
                     <!-- end col-4 -->
-                    <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="hosting.html" target="_blank">
+        <div class="col-md-4 col-sm-4 services-plans">
+        <router-link  :to="{ path: '/hosting' }"  >  
+          <a href="javascript:function() { return false; }" target="_blank">
           <img src="set/images/hosting.jpg">
           <div class="services-overlay"></div>
           <div class="text">ดูรายละเอียด</div>
           <h3>Hosting</h3>
           </a>
+        </router-link>
+                    </div>
+                    <!-- end col-4 -->
+         <div class="col-md-4 col-sm-4 services-plans">
+             <router-link  :to="{ path: '/email_hosting' }"  >
+                <a href="javascript:function() { return false; }" target="_blank">
+                <img src="set/images/email-hosting.jpg">
+                <div class="services-overlay"></div>
+                <div class="text">ดูรายละเอียด</div>
+                <h3>E-mail Hosting</h3>
+                </a>
+             </router-link>
                     </div>
                     <!-- end col-4 -->
                     <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="e-mailhosting.html" target="_blank">
-          <img src="set/images/email-hosting.jpg">
-          <div class="services-overlay"></div>
-          <div class="text">ดูรายละเอียด</div>
-          <h3>E-mail Hosting</h3>
-          </a>
-                    </div>
-                    <!-- end col-4 -->
-                    <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="google-adwords.html" target="_blank">
-          <img src="set/images/google-adwords.png">
-          <div class="services-overlay"></div>
-          <div class="text">ดูรายละเอียด</div>
-          <h3>Google Adwords</h3>
-          </a>
+          <router-link  :to="{ path: '/google' }"  >
+            <a href="javascript:function() { return false; }" target="_blank">
+            <img src="set/images/google-adwords.png">
+            <div class="services-overlay"></div>
+            <div class="text">ดูรายละเอียด</div>
+            <h3>Google Adwords</h3>
+            </a>
+          </router-link>
                     </div>
                     <!-- end col-4 -->
 
-                    <div class="col-md-4 col-sm-4 services-plans">
-                        <a href="facebook-ads.html" target="_blank">
-          <img src="set/images/facebook-ads.png">
-          <div class="services-overlay"></div>
-          <div class="text">ดูรายละเอียด</div>
-          <h3>Facebook Ads.</h3>
-          </a>
+          <div class="col-md-4 col-sm-4 services-plans">
+          <router-link  :to="{ path: '/google' }"  > 
+            <a href="javascript:function() { return false; }" target="_blank">
+            <img src="set/images/facebook-ads.png">
+            <div class="services-overlay"></div>
+            <div class="text">ดูรายละเอียด</div>
+            <h3>Facebook Ads.</h3>
+            </a>
+          </router-link>
                     </div>
                     <!-- end col-4 -->
                 </div>
@@ -330,6 +352,7 @@ import linkweb from '@/components/mainweb/linkweb.vue'
             linkweb
         },
         mounted()  {
+
         var vm = this;
         let $ = jQuery;
     $(document).ready(function() {

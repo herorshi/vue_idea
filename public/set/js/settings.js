@@ -68,7 +68,6 @@ tpj(document).ready(function() {
     if (tpj('#rev_slider_35_1').revolution == undefined) {
         revslider_showDoubleJqueryError('#rev_slider_35_1');
     } else {
-        console.log( tpj('#rev_slider_35_1'));
         // tpj('#rev_slider_35_1').show().revolution();
          tpj('#rev_slider_35_1').show().revolution({
             dottedOverlay: "none",

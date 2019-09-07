@@ -37,7 +37,12 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12"> <a href="index.html"><img src="set/images/ids-logo.png" alt="Image" class="logo"></a>
+                <div class="col-xs-12">
+                    <router-link  :to="{ path: '/' }"  >
+                        <a href="javascript:function() { return false; }">
+                        <img src="set/images/ids-logo.png" alt="Image" class="logo" />
+                        </a>
+                    </router-link>
                     <div class="hamburger-menu"> <span></span> <span></span> <span></span> <span></span> </div>
                 </div>
                 <!-- end col-12 -->
@@ -70,7 +75,11 @@
                             <figure><img src="set/images/news1.jpg" alt="Image"></figure>
                             <figcaption>
                                 <small>16TH OCTOBER 2015</small>
-                                <h3><a href="blog-detail.html">​Slack x Harvest</a></h3>
+                                <h3>
+                                    <router-link  :to="{ path: '/blog_detail' }"  >
+                                        <a href="javascript:function() { return false; }">​Slack x Harvest</a>
+                                    </router-link>
+                                </h3>
                                 <p>Introducing a full Harvest tracking and reporting tool inside Slack.</p>
                             </figcaption>
                         </div>
@@ -79,7 +88,11 @@
                             <figure><img src="set/images/news2.jpg" alt="Image"></figure>
                             <figcaption>
                                 <small>9TH MARCH 2015</small>
-                                <h3><a href="blog-detail.html">Awwwards are ffffffun.</a></h3>
+                                <h3>
+                                    <router-link  :to="{ path: '/blog_detail' }"  >
+                                        <a href="javascript:function() { return false; }">Awwwards are ffffffun.</a>
+                                    </router-link>
+                                    </h3>
                                 <p>Our 2nd Awwward in two months, for Savse Smoothies. Thanks internet.</p>
                             </figcaption>
                         </div>
@@ -89,7 +102,11 @@
                             <figure><img src="set/images/news3.jpg" alt="Image"></figure>
                             <figcaption>
                                 <small>21TH MAY 2015</small>
-                                <h3><a href="blog-detail.html">Fixed up. Looking sharp</a></h3>
+                                <h3>
+                                    <router-link  :to="{ path: '/blog_detail' }"  >
+                                        <a href="javascript:function() { return false; }">Fixed up. Looking sharp</a>
+                                    </router-link>
+                                </h3>
                                 <p>Everybody says the digital environment is changing brands radically.</p>
                             </figcaption>
                         </div>
