@@ -115,29 +115,29 @@
                     <!-- end col-12 -->
                     <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.15s">
                         <form id="contact" name="contact" method="post">
-                            <div class="form-group">
-                                <label>Your name</label>
-                                <input type="text" name="name" id="name" required>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <label>Your e-mail</label>
-                                <input type="text" name="email" id="email" required>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <label>Subject</label>
-                                <input type="text" name="subject" id="subject" required>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <textarea name="message" id="message" required></textarea>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <button id="submit" type="submit" name="submit">SEND NOW</button>
-                            </div>
-                            <!-- end form-group -->
+                        <div class="form-group">
+                            <label>Your name</label>
+                             <input type="text" v-model="name" name="name" id="name"  required>
+                          </div>
+                          <!-- end form-group -->
+                          <div class="form-group">
+                            <label>Your e-mail</label>
+                             <input type="text" v-model="email" name="email" id="email" required>
+                          </div>
+                          <!-- end form-group -->
+                          <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" v-model="subject" id="subject" required>
+                          </div>
+                          <!-- end form-group -->
+                          <div class="form-group">
+                            <textarea name="message" v-model="detail" id="message" required></textarea>
+                          </div>
+                          <!-- end form-group -->
+                          <div class="form-group">
+                            <button id="submit" @click.prevent="suggestion()" type="submit" name="submit">SEND NOW</button>
+                          </div>
+                          <!-- end form-group -->
                         </form>
                         <div id="success" class="alert alert-success" role="alert">
                             <p>Your message was sent successfully! We will be in touch as soon as we can.</p>
@@ -187,11 +187,52 @@ import linkweb from '@/components/mainweb/linkweb.vue'
 {
         data(){
                 return{ 
-                        name:'Vue',
+                        name:'',  
+                        email:'',
+                        subject:'',
+                        detail:'',
                         data:this
                       };
              },
-        methods:   { },
+        methods:   { 
+                 async   suggestion(event){
+                var formData = new FormData();
+                formData.append('name', this.$data.name);
+                formData.append('email', this.$data.email);
+                formData.append('subject', this.$data.subject);
+                formData.append('detail', this.$data.detail );
+                let  data = {
+                    name:this.$data.name,
+                    email:this.$data.email,
+                    subject:this.$data.subject,
+                    detail:this.$data.detail
+                }
+            let data_check =  await   fetch('https://metasitx.000webhostapp.com/process.php', {
+                    method: 'POST',
+                    mode: 'cors',
+                    body: formData, // data can be `string` or {object}!
+                    // headers:{'Content-Type': 'application/json'}
+                    })
+                .then(function(response) {
+                        return response.json();
+                })
+                .catch(function(error) {
+                    console.log('Request failed', error)
+                });
+                console.log(data_check.name);
+                if(data_check.name){
+                    this.$swal.fire(
+                    'Good job!',
+                    '',
+                    'success'
+                )
+                    this.$data.name = "";
+                    this.$data.email = "";
+                    this.$data.subject = "";
+                    this.$data.detail = "";
+                }
+            }
+        },
         computed:  { },
         watch:{
 
@@ -202,11 +243,12 @@ import linkweb from '@/components/mainweb/linkweb.vue'
         },
 
    beforeRouteEnter (to, from, next) {
-    // react to route changes...
-    // don't forget to call next()
+
     next(vm=>{
         vm.$nextTick(function(){
-         // Google maps pin tooltip	
+            $.getScript( 'http://maps.google.com/maps/api/js?key' )
+            .done(function( script, textStatus ) {console.log( textStatus );})
+            .fail(function( jqxhr, settings, exception ){console.log('Fail');});
 var markers = [{
     "lat": '13.822244',
     "lng": '100.732861',
