@@ -16,7 +16,7 @@
     "jquery": "^3.4.1",
     "jquery.counterup": "^2.1.0",
     "jquery.stellar": "^0.6.2",
-    "luxon": "^1.17.2",
+    "luxon": "^2.5.2",
     "masonry": "0.0.2",
     "masonry-layout": "^4.2.2",
     "popper.js": "^1.15.0",
